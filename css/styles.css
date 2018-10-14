@@ -1,0 +1,91 @@
+h1, h5 {
+    font-weight: 300;
+    line-height: 1.2;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 400
+}
+
+h3 {
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+body{
+    background-image: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 400
+}
+
+#workspace{
+    margin: 50px auto 50px;
+    max-width: 1151px;
+    background-color: rgba(225, 234, 229, 0.69);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.site-header{
+    background-color: #231F20;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-item{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-header{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.feature-divider{
+    margin: 3rem 0;
+}
+
+/* https://html5book.ru/krasivoe-oformlenie-spiskov/ */
+.bullet {
+    margin-left: 0;
+    list-style: none;
+    counter-reset: li;
+}
+.bullet>li {
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 0.6em;
+    border-radius: 4px;
+    color: #231F20;
+    background-color: rgba(255,255,255,0.7);
+    min-height: 200px
+}
+.bullet>li:before {
+    position: absolute;
+    top: -0.7em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0f320e;
+    background: #FEFEFE;
+    border-radius: 50%;
+    counter-increment: li;
+    content: counter(li);
+}
+
