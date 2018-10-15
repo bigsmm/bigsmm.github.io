@@ -1,7 +1,14 @@
 @font-face {
-    font-family: 'Lemon Tuesday'; /* Имя шрифта */
-    src: url(../fonts/Lemontuesday.ttf); /* Путь к файлу со шрифтом */
+    font-family: 'Lemon Tuesday';
+    src: url(../fonts/Lemontuesday.ttf);
 }
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/opensans.ttf);
+}
+
+
 
 h1, h5 {
     font-weight: 300;
