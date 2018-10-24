@@ -32,12 +32,17 @@ h5 {
 }
 
 body{
-    background-image: url(../img/header.jpg);
-    background-attachment: fixed;
+    background: url(../img/header.jpg) fixed;
     background-size: 100% 100%;
     font-family: 'Open Sans';
     font-size: 20px;
     font-weight: 400
+}
+
+@media screen and (max-width: 1080px) {
+    body {
+        background: white none;
+    }
 }
 
 header{
