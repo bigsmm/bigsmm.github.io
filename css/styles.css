@@ -23,8 +23,10 @@ h1 {
     font-weight: 400
 }
 
-h3 {
-    text-align: center;
+@media screen and (max-width: 414px) {
+    h1 {
+        font-size: 2.5rem;
+    }
 }
 
 h5 {
@@ -56,17 +58,17 @@ footer{
     padding: 10px;
 }
 
-
 .company-name{
     margin: auto;
     max-width: 558px;
     font-family: 'Lemon Tuesday';
-    font-size: 139px
+    font-size: 8rem
 }
 
 .company-activity{
     margin: auto;
     max-width: 907px;
+    text-align: center;
 }
 
 .smm-promotion-step-title{
