@@ -54,8 +54,13 @@ header{
 }
 
 footer{
-    background-color: #f8f6ec;
+    background-color: #343a40;
     padding: 10px;
+    font-size: 1.1rem;
+}
+
+footer a{
+    color: rgba(255,255,255,.5);
 }
 
 .company-name{
