@@ -258,9 +258,6 @@
                 <div class="project"><img src="http://unsplash.it/578/360/?image=65&amp;blur" alt=""/></div>
                 <div class="project"><img src="http://unsplash.it/578/360/?image=78&amp;blur" alt=""/></div>
                 <div class="project"><img src="http://unsplash.it/578/360/?image=91&amp;blur" alt=""/></div>
-                <div class="project"><img src="http://unsplash.it/578/360/?image=104&amp;blur" alt=""/></div>
-                <div class="project"><img src="http://unsplash.it/578/360/?image=117&amp;blur" alt=""/></div>
-                <div class="project"><img src="http://unsplash.it/578/360/?image=130&amp;blur" alt=""/></div>
             </div>
             <div class="project-screen">
                 <div class="project-detail">
@@ -269,9 +266,6 @@
                     <div class="project"><img src="http://unsplash.it/578/361/?image=65" alt=""/></div>
                     <div class="project"><img src="http://unsplash.it/578/361/?image=78" alt=""/></div>
                     <div class="project"><img src="http://unsplash.it/578/361/?image=91" alt=""/></div>
-                    <div class="project"><img src="http://unsplash.it/578/361/?image=104" alt=""/></div>
-                    <div class="project"><img src="http://unsplash.it/578/361/?image=117" alt=""/></div>
-                    <div class="project"><img src="http://unsplash.it/578/361/?image=130" alt=""/></div>
                 </div>
                 <div class="screen-frame"></div>
             </div>
@@ -365,7 +359,8 @@
             });
 
             $(".project-strip").slick({
-                slidesToShow: 5,
+                adaptiveHeight: true,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 arrows: false,
                 asNavFor: '.project-detail',
@@ -373,6 +368,32 @@
                 infinite: true,
                 centerMode: true,
                 focusOnSelect: true
+            });
+
+            $('.project-detail2').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
             });
         });
     </script>

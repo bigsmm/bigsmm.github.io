@@ -149,37 +149,10 @@ footer a{
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 @import "https://fonts.googleapis.com/css?family=Josefin+Slab";
-body {
-    font-family: "Josefin Slab";
-    height: 100vh;
-    background-color: #222;
-}
-
 .section-project {
     padding: 50px 0;
     position: relative;
     background-color: #222;
-}
-
-.section__title, .section__subtitle {
-    text-align: center;
-    color: white;
-    display: block;
-}
-
-.section__title {
-    font-size: 3em;
-    line-height: 1;
-    margin: 0 0 20px;
-}
-
-.section__subtitle {
-    font-size: 1.2em;
-    line-height: 1.5;
-    opacity: .5;
-}
-.section__subtitle a {
-    color: inherit;
 }
 
 .project-carousel {
@@ -202,7 +175,7 @@ body {
 }
 
 .project-screen {
-    width: 768px;
+    max-width: 768px;
     height: 451px;
     position: absolute;
     left: 0;
@@ -215,7 +188,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    width: 578px;
+    max-width: 578px;
     height: 361px;
     margin: 32px auto 0;
     z-index: 1;
@@ -223,7 +196,7 @@ body {
 }
 .project-screen .screen-frame {
     content: " ";
-    width: 768px;
+    max-width: 768px;
     height: 451px;
     position: absolute;
     background-image: url("https://dl.dropboxusercontent.com/u/26808427/cdn/experiments/training/macbook-frame.png");
