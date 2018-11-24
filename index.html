@@ -18,6 +18,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
     <link rel="stylesheet" href="./css/styles.css">
     <title>SMM BIG - Ведение, продвижение и реклама в соцсетях</title>
 </head>
@@ -245,6 +247,37 @@
             </div>
         </div>
 
+
+        <hr class="feature-divider">
+
+
+        <div class="project-carousel">
+            <div class="project-strip">
+                <div class="project"><img src="http://unsplash.it/578/360/?image=39&amp;blur" alt=""/></div>
+                <div class="project"><img src="http://unsplash.it/578/360/?image=52&amp;blur" alt=""/></div>
+                <div class="project"><img src="http://unsplash.it/578/360/?image=65&amp;blur" alt=""/></div>
+                <div class="project"><img src="http://unsplash.it/578/360/?image=78&amp;blur" alt=""/></div>
+                <div class="project"><img src="http://unsplash.it/578/360/?image=91&amp;blur" alt=""/></div>
+                <div class="project"><img src="http://unsplash.it/578/360/?image=104&amp;blur" alt=""/></div>
+                <div class="project"><img src="http://unsplash.it/578/360/?image=117&amp;blur" alt=""/></div>
+                <div class="project"><img src="http://unsplash.it/578/360/?image=130&amp;blur" alt=""/></div>
+            </div>
+            <div class="project-screen">
+                <div class="project-detail">
+                    <div class="project"><img src="http://unsplash.it/578/361/?image=39" alt=""/></div>
+                    <div class="project"><img src="http://unsplash.it/578/361/?image=52" alt=""/></div>
+                    <div class="project"><img src="http://unsplash.it/578/361/?image=65" alt=""/></div>
+                    <div class="project"><img src="http://unsplash.it/578/361/?image=78" alt=""/></div>
+                    <div class="project"><img src="http://unsplash.it/578/361/?image=91" alt=""/></div>
+                    <div class="project"><img src="http://unsplash.it/578/361/?image=104" alt=""/></div>
+                    <div class="project"><img src="http://unsplash.it/578/361/?image=117" alt=""/></div>
+                    <div class="project"><img src="http://unsplash.it/578/361/?image=130" alt=""/></div>
+                </div>
+                <div class="screen-frame"></div>
+            </div>
+        </div>
+
+
         <hr class="feature-divider">
 
         <a id="contacts" name="contacts"></a>
@@ -309,6 +342,7 @@
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $("nav .navbar-nav").on("click","a", function (event) {
@@ -320,6 +354,25 @@
                 top = $(id).offset().top;
                 //анимируем переход на расстояние - top за 1500 мс
                 $('body,html').animate({scrollTop: top}, 1200);
+            });
+
+            $(".project-detail").slick({
+                slidesToShow: 1,
+                arrows: false,
+                asNavFor: '.project-strip',
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+
+            $(".project-strip").slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: false,
+                asNavFor: '.project-detail',
+                dots: false,
+                infinite: true,
+                centerMode: true,
+                focusOnSelect: true
             });
         });
     </script>
