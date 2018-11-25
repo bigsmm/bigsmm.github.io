@@ -193,6 +193,8 @@ footer a{
     margin: 32px auto 0;
     z-index: 1;
     background-color: #333;
+    margin-left: 50px;
+    margin-right: 50px
 }
 .project-screen .screen-frame {
     content: " ";
