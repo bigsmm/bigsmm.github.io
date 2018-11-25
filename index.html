@@ -255,14 +255,16 @@
         <hr class="feature-divider">
 
         <a id="portfolio" name="portfolio"></a>
-        <div class="one-time">
-            <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-2.png" alt=""/></div>
-            <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО.png" alt=""/></div>
-            <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-3.png" alt=""/></div>
-            <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-4.png" alt=""/></div>
-            <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-5.png" alt=""/></div>
-            <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-6.png" alt=""/></div>
-            <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-66.png" alt=""/></div>
+        <div style="position: relative">
+            <div class="portfolio" style="padding: 5px">
+                <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-2.png" alt=""/></div>
+                <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО.png" alt=""/></div>
+                <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-3.png" alt=""/></div>
+                <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-4.png" alt=""/></div>
+                <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-5.png" alt=""/></div>
+                <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-6.png" alt=""/></div>
+                <div><img style="width: 100%" src="./img/portfolio/ПОРТФОЛИО-66.png" alt=""/></div>
+            </div>
         </div>
 
 
@@ -344,7 +346,7 @@
                 $('body,html').animate({scrollTop: top}, 1200);
             });
 
-            $('.one-time').slick({
+            $('.portfolio').slick({
                 dots: true,
                 infinite: true,
                 speed: 300,
