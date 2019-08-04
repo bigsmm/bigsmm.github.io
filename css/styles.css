@@ -210,4 +210,15 @@ footer a{
     cursor: move;
 }
 
+/*  OVERRIDE */
+.slick-next {
+    right: 0 !important;;
+    z-index: 5;
+}
+.slick-next:before, .slick-prev::before {
+    font-size: 3rem;
+}
 
+.slick-prev {
+    z-index: 5;
+}
